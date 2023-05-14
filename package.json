@@ -2,7 +2,10 @@
   "name": "hybrid",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+   "start": "node ./node_modules/nx/bin/nx.js serve hybrid --port 4200",
+   "build": "node ./node_modules/nx/bin/nx.js run hybrid:build" 
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "~16.0.0",
@@ -29,6 +32,7 @@
     "@angular/compiler-cli": "~16.0.0",
     "@angular/language-service": "~16.0.0",
     "@nx/cypress": "16.1.4",
+    "@nx/esbuild": "16.1.4",
     "@nx/eslint-plugin": "16.1.4",
     "@nx/jest": "16.1.4",
     "@nx/js": "16.1.4",
@@ -37,10 +41,11 @@
     "@nx/workspace": "16.1.4",
     "@schematics/angular": "~16.0.0",
     "@types/jest": "^29.4.0",
-    "@types/node": "16.11.7",
+    "@types/node": "18.7.1",
     "@typescript-eslint/eslint-plugin": "^5.58.0",
     "@typescript-eslint/parser": "^5.58.0",
     "cypress": "^12.11.0",
+    "esbuild": "^0.17.17",
     "eslint": "~8.15.0",
     "eslint-config-prettier": "8.1.0",
     "eslint-plugin-cypress": "^2.10.3",
