@@ -1,0 +1,8 @@
+<div style="display: flex; flex-direction: row; gap: 1rem;margin-left: 4rem;">
+  <div *ngFor="let item of dates">
+    {{ item | date : 'd' }}
+  </div>
+</div>
+<div *ngFor="let item of names">
+  {{ item }}
+</div>
