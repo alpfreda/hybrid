@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@hybrid/app/*": ["apps/hybrid/src/*"],
       "@hybrid/common": ["libs/hybrid-common/src/index.ts"]
     }
   },
